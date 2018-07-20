@@ -11,6 +11,8 @@ module.exports = app => {
   router.get('/v1/subject/follow', controller.subject.follow);
   // 创建话题
   router.post('/v1/subject', controller.subject.create);
+  // 获取话题
+  router.get('/v1/subject', controller.subject.subject);
   // 用户关注
   router.post('/v1/subject/follower', controller.subject.follower);
   // 帖子
@@ -29,4 +31,8 @@ module.exports = app => {
   router.get('/v1/user/topic', controller.user.topic);
   // 我的信息
   router.get('/v1/user', controller.user.index);
+  // 签到
+  router.get('/v1/sign', controller.user.sign);
+  // 七牛上传
+  router.get('/v1/uptoken', controller.qiniu.index);
 };

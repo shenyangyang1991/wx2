@@ -1,8 +1,8 @@
 'use strict';
 
 const Service = require('egg').Service;
-const key = require('../redis');
-const util = require('../util');
+const key     = require('../redis');
+const util    = require('../util');
 
 class BaseService extends Service {
   get user() {
