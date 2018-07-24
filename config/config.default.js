@@ -9,24 +9,6 @@ module.exports = appInfo => {
   config.security     = { csrf: { enable: false } };
   config.redis        = {
                           clients     : {
-                            subject   : {
-                              port    : 6379,
-                              host    : 'r-bp10b787698e1954.redis.rds.aliyuncs.com',
-                              password: 'Syy@19910408',
-                              db      : 0,
-                            },
-                            user      : {
-                              port    : 6379,
-                              host    : 'r-bp150450d30a2b94.redis.rds.aliyuncs.com',
-                              password: 'Syy@19910408',
-                              db      : 0,
-                            },
-                            session   : {
-                              port    : 6379,
-                              host    : 'r-bp150450d30a2b94.redis.rds.aliyuncs.com',
-                              password: 'Syy@19910408',
-                              db      : 1,
-                            },
                           },
                         };
 
@@ -43,8 +25,6 @@ module.exports = appInfo => {
     appSecret   : 'dacb0d4c7f111f4e7428d4ea03ae21b0',
   };
   config.qiniu = {
-    accessKey   : 'FVrhckCUol5scgxJ-TNI5pkrLRD6YE1d4YjUNxBw',
-    secretKey   : 'lyCCPk005jFpsxAr1XMNFgih9gaoxFLHwFME-rCC',
   };
   config.customLogger = {
     commentLogger: {
