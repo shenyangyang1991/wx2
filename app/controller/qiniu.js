@@ -2,8 +2,8 @@
 
 const Controller = require('./base');
 const qiniu      = require('qiniu');
-const accessKey  = 'FVrhckCUol5scgxJ-TNI5pkrLRD6YE1d4YjUNxBw';
-const secretKey  = 'lyCCPk005jFpsxAr1XMNFgih9gaoxFLHwFME-rCC';
+const accessKey  = '';
+const secretKey  = '';
 const mac        = new qiniu.auth.digest.Mac(accessKey, secretKey);
 const bucket     = 'highfaner-hfc';
 
